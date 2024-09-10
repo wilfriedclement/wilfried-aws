@@ -22,9 +22,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-  Label,
-  Input
-} from "@/components/ui/form"
+} 
+from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
@@ -47,8 +46,8 @@ function FormSection() {
     console.log(values)
   }
     return (
-        <section className='flex-[2] flex-col bg-fuchsia-400 items-center flex justify-start' >
-          <div className="bg-blue-500  flex-col flex w-[23rem]  justify-start    h-full">
+        <section className='flex-[2] flex-col items-center flex justify-start' >
+          <div className="  flex-col flex w-[23rem]  justify-start    h-full">
             <img src="/public/logo.svg" alt="" className=" w-[20rem] mx-4" />
             <h1 className="text-[#18181B] font-semibold text-3xl flex justify-center items-center">Connexion</h1>
             <p className="w-[19rem] font-light text-[#71717A] px-6">Rentrez vos infos pour vous connecter .</p>

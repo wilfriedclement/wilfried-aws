@@ -14,8 +14,6 @@ import Logo from "/logo.svg"
 import Step from '../items/Step'
 import SidebarMock from '@/utils/Sidebar.mock'
 import { useState } from 'react'
-import PasswordInputProgress from "../items/xam"
-
 function SideBar() {
     const [isActive, SetIsActive] = useState(0)
     const taille = SidebarMock.length
@@ -37,7 +35,6 @@ function SideBar() {
 
             </div>
           </div>
-          <PasswordInputProgress/>
             <div className="flex justify-self-end	w-full justify-between">
                 <button className="flex"> <svg xmlns="http://www.w3.org/2000/svg" className="text-[#00539C]"  viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"}>
                     <path d="M3.99982 11.9998L19.9998 11.9998" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
