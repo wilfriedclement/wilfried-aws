@@ -25,6 +25,7 @@ import {
 } 
 from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import PasswordStrength from "../items/password";
 
 const formSchema = z.object({
     username: z.string().min(2, {
@@ -67,19 +68,7 @@ function FormSection() {
             </FormItem>
           )}
         />
-        <FormField
-          control={form.control}
-          name="password"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>password</FormLabel>
-              <FormControl>
-                <Input placeholder="*************" {...field} className="w-full bg-[#D9D9D9]" />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+        <PasswordStrength/>
         <Button type="submit" className="w-full bg-[#00539C]">create Account</Button>
         <div className="flex justify-between  gap-2"><hr className="h-0.5 bg-[#71717A] w-[9rem]" /><h1 className="mt-[-0.9rem] text-[#71717A]">ou avec</h1><hr className="h-0.5 bg-[#71717A]  w-[9rem]" /></div>
        <Button type="submit" className="w-full flex gap-[0.5rem] border-solid bg-white text-black border-[#E4E4E7] justify-center">
