@@ -49,7 +49,7 @@ function FormSection() {
     return (
         <section className='flex-[2] flex-col items-center flex justify-start' >
           <div className="  flex-col flex w-[23rem]  justify-start    h-full">
-            <img src="/public/logo.svg" alt="" className=" w-[20rem] mx-4" />
+            <img src="/public/logo2.svg" alt="" className=" w-[20rem] mx-4" />
             <h1 className="text-[#18181B] font-semibold text-3xl flex justify-center items-center">Connexion</h1>
             <p className="w-[19rem] font-light text-[#71717A] px-6">Rentrez vos infos pour vous connecter .</p>
               <Form {...form}>
@@ -81,6 +81,12 @@ function FormSection() {
        </Button>
       <p className="text-[1rem] mx-10 mt-[-1rem] text-[#71717A]">By clicking continue, you agree to our <br/>
                Terms of Service and Privacy Policy.</p> 
+               <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+        <input style={{ backgroundColor: "blue" }} readOnly className="w-[5.2rem] rounded-md h-4" />
+        <input style={{ backgroundColor: "gray" }} readOnly className="w-[5.2rem] rounded-md h-4" />
+        <input style={{ backgroundColor: "gray" }} readOnly className="w-[5.2rem] rounded-md h-4" />
+        <input style={{ backgroundColor: "gray" }} readOnly className="w-[5.2rem] rounded-md h-4"/>
+      </div>
       </form>
     </Form>
   

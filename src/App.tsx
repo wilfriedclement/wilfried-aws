@@ -10,22 +10,26 @@
     * - Author          : Hp
     * - Modification    : 
 **/
+import SidebarMock from './utils/Sidebar.mock'
 import SideBar from '@/components/ui-elements/SideBar'
-import FormSection from './components/ui-elements/FormSection'
+import Index from './components/ui-elements'
 import { useState } from 'react'
 function App() {
-  const [isActive,setIsActive] = useState(0)
-  const taill =4 
-  function incrementer() {
-    setIsActive((isActive)=>(isActive + 1)% taill)
+  const [isActive, SetIsActive] = useState(0)
+  const taille = SidebarMock.length
+  
+  // navigating forward through panel
+  function next(){
+      SetIsActive((isActive) => (isActive + 1)%taille)
   }
-  function disincrementer() {
-    setIsActive((isActive)=>(isActive - 1)% taill)
+  // navigating backward through panel
+  function preview(){
+      SetIsActive((isActive) => (isActive + (taille-1))%taille)
   }
   return (
     <main className=' flex w-screen h-screen'>
-      <SideBar active={isActive} incrementer={incrementer} disincrementer={disincrementer} />
-      <FormSection  active={isActive}/>
+      <SideBar isActive={isActive} next={next} preview={preview}/>     {/* calling side bar component*/}
+     <Index active={isActive}/> 
     </main>
   )
 }

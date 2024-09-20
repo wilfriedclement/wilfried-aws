@@ -34,7 +34,7 @@ const PasswordStrength = () => {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <input
       className="w-full bg-[#D9D9D9] rounded-sm border-[0.1rem] border-solid h-[2.2rem] px-4 text-[#71717A]"
         type="password"

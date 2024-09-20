@@ -10,7 +10,7 @@
     * - Author          : Hp
     * - Modification    : 
 **/
-import React from 'react';
+
 
 const Sign = (props:any) => {
     return (

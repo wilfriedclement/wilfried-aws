@@ -1,5 +1,16 @@
+/**
+    * @description      : 
+    * @author           : Hp
+    * @group            : 
+    * @created          : 20/09/2024 - 16:20:13
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 20/09/2024
+    * - Author          : Hp
+    * - Modification    : 
+**/
 import React from 'react'
-import { UserIcon } from '@/utils/Icons'
 
 export interface StepProps extends React.HTMLAttributes<HTMLDivElement> {
     icon: React.ReactElement
